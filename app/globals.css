@@ -1,26 +1,128 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f4f2ee;
+  --foreground: #1c1917;
+  --accent: #1e3a5f;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  height: 100%;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.leaflet-container {
+  font-family: inherit;
+  background: #ece9e4;
+}
+
+.leaflet-control-zoom a {
+  width: 36px !important;
+  height: 36px !important;
+  line-height: 36px !important;
+  font-size: 18px !important;
+}
+
+.leaflet-control-attribution {
+  max-width: min(100%, 22rem);
+  font-size: 11px;
+}
+
+.custom-marker {
+  background: transparent;
+  border: none;
+}
+
+.custom-marker-dot {
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin: 3px;
+  border-radius: 999px;
+  border: 3px solid #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+.app-popup .leaflet-popup-content-wrapper,
+.app-popup .leaflet-popup-tip {
+  background: #fff;
+  color: #1c1917;
+}
+
+.app-popup .leaflet-popup-content-wrapper {
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(28, 25, 23, 0.16);
+}
+
+.app-popup .leaflet-popup-content {
+  margin: 12px 14px;
+  min-width: 200px;
+}
+
+.app-popup .leaflet-popup-content p {
+  margin: 0;
+}
+
+.popup-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  max-width: 15.5rem;
+}
+
+.popup-title {
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.35;
+  color: #1c1917;
+}
+
+.popup-address,
+.popup-type,
+.popup-notes {
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: #44403c;
+}
+
+.popup-type {
+  font-weight: 600;
+  color: #1e3a5f;
+}
+
+.popup-directions {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  margin-top: 0.45rem;
+  padding: 0.55rem 0.85rem;
+  border-radius: 0.5rem;
+  background: #1e3a5f;
+  color: #fff;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.popup-directions:focus-visible {
+  outline: 2px solid #1e3a5f;
+  outline-offset: 2px;
 }

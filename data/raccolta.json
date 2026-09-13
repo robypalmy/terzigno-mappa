@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "avviso": "DATI DEMO. Nomi, indirizzi e coordinate sono indicativi e vanno sostituiti con i dati ufficiali del Comune di Terzigno. Non sono posizioni ufficiali."
+  },
+  "categorie": [
+    {
+      "id": "pile",
+      "etichetta": "Raccolta pile esauste",
+      "colore": "#1f57c3",
+      "indicazioni": "Conferisci pile stilo, ministilo e a bottone nell'apposito contenitore. Non lasciare buste all'esterno."
+    },
+    {
+      "id": "raee",
+      "etichetta": "Raccolta RAEE",
+      "colore": "#16a34a",
+      "indicazioni": "Conferisci piccoli apparecchi elettrici ed elettronici presso il punto di raccolta."
+    },
+    {
+      "id": "farmaci",
+      "etichetta": "Raccolta farmaci scaduti",
+      "colore": "#dc2626",
+      "indicazioni": "Conferisci esclusivamente farmaci scaduti negli appositi contenitori."
+    },
+    {
+      "id": "centro-raccolta",
+      "etichetta": "Centro di raccolta comunale",
+      "colore": "#0f766e",
+      "indicazioni": "Conferisci i rifiuti differenziati secondo le indicazioni del personale. Orari e materiali ammessi sono definiti dal Comune."
+    }
+  ],
+  "punti": [
+    {
+      "nome": "Tabaccheria Demo",
+      "indirizzo": "Via Roma, 115 (DEMO)",
+      "lat": 40.8106212,
+      "lng": 14.4978009,
+      "categoria": "pile"
+    },
+    {
+      "nome": "Edicola Demo",
+      "indirizzo": "Corso Vittorio Emanuele (DEMO)",
+      "lat": 40.8072,
+      "lng": 14.4928,
+      "categoria": "pile"
+    },
+    {
+      "nome": "Punto RAEE Demo",
+      "indirizzo": "Via San Giuseppe (DEMO)",
+      "lat": 40.8058,
+      "lng": 14.4994,
+      "categoria": "raee"
+    },
+    {
+      "nome": "Farmacia Demo",
+      "indirizzo": "Piazza Municipio (DEMO)",
+      "lat": 40.8089,
+      "lng": 14.4941,
+      "categoria": "farmaci"
+    },
+    {
+      "nome": "Centro di Raccolta Comunale",
+      "indirizzo": "Via Vicinale Piano del Principe, Terzigno (DEMO – coordinate indicative)",
+      "lat": 40.8015,
+      "lng": 14.5022,
+      "categoria": "centro-raccolta"
+    }
+  ]
+}

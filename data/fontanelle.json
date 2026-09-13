@@ -1,0 +1,28 @@
+{
+  "_meta": {
+    "avviso": "DATI DEMO. Le fontanelle e le coordinate sono indicative e vanno sostituite con i dati ufficiali del Comune di Terzigno."
+  },
+  "punti": [
+    {
+      "nome": "Fontanella pubblica (DEMO)",
+      "indirizzo": "Piazza Municipio (DEMO)",
+      "lat": 40.8084,
+      "lng": 14.4948,
+      "indicazioni": "Acqua potabile"
+    },
+    {
+      "nome": "Fontanella pubblica (DEMO)",
+      "indirizzo": "Via San Gennaro (DEMO)",
+      "lat": 40.8112,
+      "lng": 14.4906,
+      "indicazioni": "Acqua potabile"
+    },
+    {
+      "nome": "Fontanella pubblica (DEMO)",
+      "indirizzo": "Via Dante (DEMO)",
+      "lat": 40.8046,
+      "lng": 14.4969,
+      "indicazioni": "Acqua potabile. Verificare eventuale chiusura temporanea."
+    }
+  ]
+}
